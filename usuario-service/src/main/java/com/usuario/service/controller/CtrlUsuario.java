@@ -109,26 +109,26 @@ public class CtrlUsuario
 
 	private ResponseEntity<List<Carro>> fallbackGetCarros(@PathVariable("usuarioId") int id, RuntimeException runTimEx)
 	{
-		return new ResponseEntity("El usuario : "+id+"tiene los carros en el taller",HttpStatus.OK);
+		return new ResponseEntity("El usuario : "+id+" tiene los carros en el taller",HttpStatus.OK);
 	}
 	
-	private ResponseEntity<List<Carro>> fallbackSaveCarro(@PathVariable("usuarioId") int id, @RequestBody Carro carro, RuntimeException runTimEx)
+	private ResponseEntity<Carro> fallbackSaveCarro(@PathVariable("usuarioId") int id, @RequestBody Carro carro, RuntimeException runTimEx)
 	{
-		return new ResponseEntity("El usuario : "+id+"no tiene dinero para los carros",HttpStatus.OK);
+		return new ResponseEntity("El usuario : "+id+" no tiene dinero para los carros",HttpStatus.OK);
 	}
 
 	private ResponseEntity<List<Moto>> fallbackGetMotos(@PathVariable("usuarioId") int id, RuntimeException runTimEx)
 	{
-		return new ResponseEntity("El usuario : "+id+"tiene las motos en el taller",HttpStatus.OK);
+		return new ResponseEntity("El usuario : "+id+" tiene las motos en el taller",HttpStatus.OK);
 	}
 	
-	private ResponseEntity<List<Moto>> fallbackSaveMoto(@PathVariable("usuarioId") int id, @RequestBody Moto moto, RuntimeException runTimEx)
+	private ResponseEntity<Moto> fallbackSaveMoto(@PathVariable("usuarioId") int id, @RequestBody Moto moto, RuntimeException runTimEx)
 	{
-		return new ResponseEntity("El usuario : "+id+"no tiene dinero para las motos",HttpStatus.OK);
+		return new ResponseEntity("El usuario : "+id+" no tiene dinero para las motos",HttpStatus.OK);
 	}
 
-	private ResponseEntity<List<Moto>> fallbackGetTodos(@PathVariable("usuarioId") int id, RuntimeException runTimEx)
+	private ResponseEntity<Map<String,Object>> fallbackGetTodos(@PathVariable("usuarioId") int id, RuntimeException runTimEx)
 	{
-		return new ResponseEntity("El usuario : "+id+"tiene los vehuculos en el taller",HttpStatus.OK);
+		return new ResponseEntity("El usuario : "+id+" tiene los vehuculos en el taller",HttpStatus.OK);
 	}
 }
