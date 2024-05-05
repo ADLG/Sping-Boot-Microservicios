@@ -1,12 +1,12 @@
 En este repositorio se encuentra el Desarrollo de Microservicios con Spring Boot y Spring Cloud:
 
-<h3 style="text-align: justify;">
+<h3>
 Este proyecto consta de usuarios con cuentas que tienen a su disposición carros y motos.
-Dichos microservicios que se comunican utilizando RestTemplate, Feign Client, configuraciones de archivos en Git y administración de dichos microservicios mediante Eureka y puerta de enlace Gateway.
+Dichos microservicios que se comunican utilizando:<br>
+RestTemplate, Feign Client, configuraciones de archivos en Git y administración de dichos microservicios mediante Eureka y puerta de enlace Gateway.<br>
 Además de utilizar el patrón circuit-breaker Resilience4j para utilizar correctamente la arquitectura de Microservicios.
 </h3>
 
--
 ## ***Microservicios Spring Boot***
 
 ### Especificaciones:
