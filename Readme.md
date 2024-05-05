@@ -13,7 +13,7 @@ RestTemplate, Feign Client, configuraciones de archivos en Git y administración
 
 Project - Maven <br>
 Language - Java <br>
-Spring Boot - 3.2.4
+Spring Boot - 3.2.4 <br>
 Spring Cloud - 2023.0.0 <br>
 Packaging - Jar <br>
 Java - 17 <br>
